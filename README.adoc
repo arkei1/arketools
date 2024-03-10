@@ -1,0 +1,16 @@
+= Arketools
+
+Arketools addon for Blender is an opinionated collection of various utilities
+that should be included by default (in my opinion)
+
+== Features
+
+. Find all objects that have any modifier, but subdivision surface.
+. Add procedural primitives
+
+First is useful when you need to export Sub-D ready model. I usually do this by disabling `Apply modifiers` during export, but sometimes I forget there are other modifiers besides SubD that are not compatible with other software. This function helps you find the pesky modifiers in single click and deal with them how you see fit.
+
+Second, is for situation when you don't know exacly how many vertices you'll need
+for particular shape in advance. Default way of creating primitives only allows 
+such adjustments on creation time and it's often tedious trial and error process.
+This function uses simple geometry nodes setups to make shapes changable after the fact. 
